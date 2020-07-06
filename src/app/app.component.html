@@ -1,0 +1,14 @@
+<div class="main">
+  <div class="graph">
+    <nvd3 [options]="options" [data]="data"></nvd3>
+  </div>
+  <div class="container">
+    <div>
+      <input type="button" (click)="handleButtonClick()" value="Main Thread Task" />
+      <input type="button" (click)="handleWebWorkerProcess()" value="Web Worker Task" />
+    </div>
+    <div id="canContainer" class="canvasContainer">
+      <!-- <canvas #myCanvas id="myCanvas" width="700" height="500" style="border:1px solid #d3d3d3;"></canvas> -->
+    </div>
+  </div>
+</div>
